@@ -271,7 +271,7 @@
 // const str ='hello world';
 // console.log(str.length);
 // console.log(str.slice(0,6));
-// alert('hello'); 
+// alert('hello');
 // console.log('world');
 
 
@@ -281,14 +281,42 @@
 // console.log(message);
 
 
-function foo(a, b) {
-    const result = a + b;
-    if (result < 10) {
-        return 'Error';
-    }
-    return result;
+//function foo(a, b) {
+   // const result = a + b;
+   //if (result < 10) {
+    //    return 'Error';
+   // }
+   // return result;
+//}
+//console.log(foo(2, 3));
+//console.log(foo(4, 6));
+//console.log(foo(2, 1));
+//console.log(foo(5, 8));
+
+function createArrayOfNumbers(min, max) {
+
+ const numbers = [];
+ let num = min;
+    
+ while (num <= max) {
+  numbers.push(num);
+  num +=1;
 }
-console.log(foo(2, 3));
-console.log(foo(4, 6));
-console.log(foo(2, 1));
-console.log(foo(5, 8));
+    
+    return numbers;
+    
+}
+
+// createArrayOfNumbers(1, 3);
+//  let min = 1;
+//  let max = 3;
+
+//  const numbers = [];
+
+//  let num = min;
+//  while (num <= max) {
+//   numbers.push(num);
+//    num +=1;
+// }
+
+// console.log(numbers);
