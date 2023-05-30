@@ -461,18 +461,18 @@
 // addCourse(name) - додає курс до кінця колекції
 // removeCourse(name) - видаляє курс із колекції
 // updateCourse(oldName, newName) - змінює ім'я на нове
-const courses = ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL'];
-function addCourse(name) {
-    if (!courses.includes(name)) {
-        courses.push(name)
-        return;
-    }
+// const courses = ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL'];
+// function addCourse(name) {
+//     if (!courses.includes(name)) {
+//         courses.push(name)
+//         return;
+//     }
 
-    return 'Ви вже маєте такий курс';
-}
-addCourse('Express');
-console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
-addCourse('CSS'); // 'Ви вже маєте такий курс'
+//     return 'Ви вже маєте такий курс';
+// }
+// addCourse('Express');
+// console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
+// addCourse('CSS'); // 'Ви вже маєте такий курс'
 
 
 // function removeCourse(name) {
@@ -483,19 +483,96 @@ addCourse('CSS'); // 'Ви вже маєте такий курс'
 //     courses.splice(idx, 1)
 // }
 
-removeCourse('React');
-console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
-removeCourse('Vue'); // 'Курс із таким ім'ям не знайдено'
+// removeCourse('React');
+// console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
+// removeCourse('Vue'); // 'Курс із таким ім'ям не знайдено'
 
 
-// function updateCourse(oldName, newName) {
-//     const idx = courses.indexOf(oldName);
-//     if (idx === -1) { //!!~idx
-//         return "Курс із таким ім'ям не знайдено"
+// // function updateCourse(oldName, newName) {
+// //     const idx = courses.indexOf(oldName);
+// //     if (idx === -1) { //!!~idx
+// //         return "Курс із таким ім'ям не знайдено"
+// //     }
+// //     // courses.splice(idx, 1, newName);
+// //     courses[idx] = newName;
+// // }
+
+// updateCourse('Express', 'NestJS');
+// console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
+
+// function findMatches() {
+//     const matches = [];
+//     let arr = [];
+// for (let argument of arguments) {
+//     if (Array.isArray(argument)) {
+//         arr = argument;
+//     } else {
+//         for (let i = 0; i < arr.length; i += 1)
+//             if (arr[i] === argument) {
+//                 matches.push(argument);
+//             }
 //     }
-//     // courses.splice(idx, 1, newName);
-//     courses[idx] = newName;
 // }
+//   // Change code above this line
+//     console.log(matches);
+//   return matches;
+// }
+// findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2)
 
-updateCourse('Express', 'NestJS');
-console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
+// const atTheOldToad = {
+//     potions: [
+//         { name: "Speed potion", price: 460 },
+//         { name: "Dragon breath", price: 780 },
+//         { name: "Stone skin", price: 520 },
+//     ],
+//     // Change code below this line
+//     getPotions() {
+//         return this.potions;
+//     },
+//     addPotion(newPotion) {
+//             for (const potion of this.potions) {
+//                 if (potion.name === newPotion.name) {
+//                     console.log('exist');
+//                 return `Error! Potion ${newPotion} is already in your inventory!`;
+//             }
+//         }
+//         this.potions.push(newPotion);
+        
+//     },
+//     removePotion(potionName) {
+      
+//         for (const potion of this.potions) {
+//             if (potion.name === potionName) {
+//                 const potionIndex = this.potions.indexOf(potion);
+//                 this.potions.splice(potionIndex, 1);
+//                 return this.potions;
+//             }
+//         }
+//         return `Potion ${potionName} is not in inventory!`;
+          
+//     },
+    
+
+//     updatePotionName(oldName, newName) {
+//         for (const potion of this.potions) {
+//             if (potion.name === oldName) {
+//                 potion.name = newName;
+//                 console.log(this.potions);
+//                 return this.potions;
+//              }
+//         }
+//         console.log('not exist')
+//         return `Potion ${oldName} is not in inventory!`;
+          
+//     }
+
+// }
+// atTheOldToad.addPotion({ name: 'Stone skin', price: 240 });
+
+function hh(x) {
+    delete x;
+   
+    return x;
+}
+
+hh(5);

@@ -74,7 +74,7 @@
 
 
 // String
-// const price = 100; 
+// const price = 100;
 // const str = `value ${price * 12}`;
 // console.log(str);
 //  0123456789

@@ -1,15 +1,15 @@
-// Example 7 - ДОДАТКОВО 
+// Example 7 - ДОДАТКОВО
 
 
-const arr = [true, 1, 'str', null, undefined, [4, 5], {}];
-console.log(arr);
+// const arr = [true, 1, 'str', null, undefined, [4, 5], {}];
+// console.log(arr);
 
-function foo() {
-    console.log(arguments);
-}
+// function foo() {
+//     console.log(arguments);
+// }
 
 
-foo(1, 2, 3, 4, 56, 7)
+// foo(1, 2, 3, 4, 56, 7)
 // const result = [true, 1, 'str', [4, 5], {}, 55, 'hello'];
 
 
@@ -295,6 +295,21 @@ foo(1, 2, 3, 4, 56, 7)
 // console.log(result);
 
 
+// const langs = ['python', 'javascript', 'c++', 'haskel', 'php', 'ruby'];
+// let result = [];
+// let buffer;
+// for (let j = 0; j < langs.length - 1; j += 1) {
+//     for ( let i = 0; i < langs.length - 1; i += 1) {
+//     if (langs[i] > langs[i + 1]) {
+//         buffer = langs[i];
+//         langs[i] = langs[i + 1];
+//         langs[i + 1] = buffer;
+//     }
+// }
+//     result = langs;
+// }
+//  console.log(result);
+
 
 
 // Example 8 - Пошук елемента
@@ -315,3 +330,78 @@ foo(1, 2, 3, 4, 56, 7)
 
 // чи можно в case використовувати быльш нiж одну let? наприклад ...... case time:      price=20;    message= "OK". до цього звичайно було прописано let price; let message
 
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+
+// function getProductPrice(productName) {
+//   let priceProd;
+//  for (let product of products) {
+//    if (product.name === productName) {
+//        priceProd = product.price;
+       
+//        return priceProd;
+//    } else {
+//      priceProd = null;
+//    }
+   
+//  }
+//   return priceProd;
+// }
+
+// console.log(getProductPrice("Droid"));
+
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// const properties = [];
+// arrKeys = [];
+
+// function getAllPropValues(propName) {
+//   for (let product of products) {
+//       arrKeys = Object.keys(product);
+//       break;
+//     }
+//     if (!arrKeys.includes(propName)) {
+//         return [];
+//     } else {
+//         for (let product of products) {
+//             properties.push(product[propName])
+//         }
+//     }
+
+//     console.log(properties);
+   
+//   return properties;
+// }
+// getAllPropValues('quantity');
+
+let bn=0;
+function addOverNum(...args) {
+  
+    let total = 0;
+
+  for (const arg of args) {
+    if (arg>args[0]) {
+      total += arg;
+    }
+      
+    }
+    bn = total;
+    console.log(bn);
+  return total;
+ 
+}
+
+
+
+addOverNum(10, 12, 4, 11, 48, 10, 8);

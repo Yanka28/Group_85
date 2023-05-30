@@ -108,17 +108,17 @@
 //    }
 // console.log(arr);
 
-let array = [1, 2, 3, 4, 5];
-let value = 3;
-let bool = '';
-let item;
-for ( item of array) {
-  if( item === value){
-      bool = 'true';
-      break;
-  } else {
-    bool = 'false';
-  }
-}
-console.log(bool);
-console.log(item);
+// let array = [1, 2, 3, 4, 5];
+// let value = 3;
+// let bool = '';
+// let item;
+// for ( item of array) {
+//   if( item === value){
+//       bool = 'true';
+//       break;
+//   } else {
+//     bool = 'false';
+//   }
+// }
+// console.log(bool);
+// console.log(item);
