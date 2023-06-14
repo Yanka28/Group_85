@@ -35,58 +35,37 @@
 // }
 
 
-// const test = user;
-// console.log(test === user);
-// const copyUser = { ...user }
-// const copyUser1 = JSON.parse(JSON.stringify(user))
-
-// console.log(copyUser === user);
-// console.log(copyUser.country === user.country);
-
-// function iterObject(obj) {
-//     for (const key in obj) {
-//         if (typeof obj[key] === 'object' && !Array.isArray(obj[key])) {
-//             iterObject(obj[key]);
-//         }
-//         // console.log(user.key);
-//         console.log('Ключ', key);
-//         console.log('Значення', obj[key]);
-
-//     }
-// }
-
-// iterObject(user)
 
 
 
 
 
-// const user = {
-//     name: 'Test',
-//     age: 28,
-//     skills: ['html', 'css', 'js'],
-//     country: {
-//         Lviv: 'Адреса з Львову',
-//         Odessa: 'Адреса з Одеси',
-//         testKEY: {
-//             testValue: 'Hello world'
-//         }
-//     }
-// }
+const user = {
+    name: 'Test',
+    age: 28,
+    skills: ['html', 'css', 'js'],
+    country: {
+        Lviv: 'Адреса з Львову',
+        Odessa: 'Адреса з Одеси',
+        testKEY: {
+            testValue: 'Hello world'
+        }
+    }
+}
 
-// const admin = Object.create(user)
-// admin.name = "Admin admin";
-// admin.age = 33;
-// admin.testKEY = {
-//     testValue: 'Hello world'
-// }
-// console.log(admin.name);
-// console.log(admin);
-// for (const key in admin) {
-//     if (admin.hasOwnProperty(key)) {
-//         console.log(admin[key]);
-//     }
-// }
+const admin = Object.create(user)
+admin.name = "Admin admin";
+admin.age = 33;
+admin.testKEY = {
+    testValue: 'Hello world'
+}
+console.log(admin.name);
+console.log(admin);
+for (const key in admin) {
+    if (admin.hasOwnProperty(key)) {
+        console.log(admin[key]);
+    }
+}
 
 // const keys = Object.keys(admin);
 // for(const key of keys){
@@ -569,10 +548,10 @@
 // }
 // atTheOldToad.addPotion({ name: 'Stone skin', price: 240 });
 
-function hh(x) {
-    delete x;
+// function hh(x) {
+//     delete x;
    
-    return x;
-}
+//     return x;
+// }
 
-hh(5);
+// hh(5);

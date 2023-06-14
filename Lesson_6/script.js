@@ -797,37 +797,37 @@
 
 // 
 
-// const historyService = {
-//   orders: [
-//     { email: "jacob@hotmail.com", dish: "Burrito" },
-//     { email: "solomon@topmail.net", dish: "Burger" },
-//     { email: "artemis@coldmail.net", dish: "Pizza" },
-//     { email: "solomon@topmail.net", dish: "Apple pie" },
-//     { email: "jacob@hotmail.com", dish: "Taco" },
-//   ],
-//   // Change code below this line
-//   getOrdersLog() {
-//     return this.orders
-//       .map(order => `email: ${order.email} dish: ${order.dish}`)
-//       .join(" - ");
-//   },
-//   getEmails() {
-//     const emails = this.orders.map(order => order.email);
-//     const uniqueEmails = new Set(emails);
-//     console.log(uniqueEmails);
-//     return [...uniqueEmails];
+const historyService = {
+  orders: [
+    { email: "jacob@hotmail.com", dish: "Burrito" },
+    { email: "solomon@topmail.net", dish: "Burger" },
+    { email: "artemis@coldmail.net", dish: "Pizza" },
+    { email: "solomon@topmail.net", dish: "Apple pie" },
+    { email: "jacob@hotmail.com", dish: "Taco" },
+  ],
+  // Change code below this line
+  getOrdersLog() {
+    return this.orders
+      .map(order => `email: ${order.email} dish: ${order.dish}`)
+      .join(" - ");
+  },
+  getEmails() {
+    const emails = this.orders.map(order => order.email);
+    const uniqueEmails = new Set(emails);
+    console.log(uniqueEmails);
+    return [...uniqueEmails];
     
-//   },
-//   getOrdersByEmail(email) {
-//     return this.orders.filter(order => order.email === email);
-//   },
-//   // Change code above this line
-// };
+  },
+  getOrdersByEmail(email) {
+    return this.orders.filter(order => order.email === email);
+  },
+  // Change code above this line
+};
 
 
-// console.log(historyService.getOrdersLog);
-// console.log(historyService.getEmails);
-// console.log(historyService.getOrdersByEmail);
+console.log(historyService.getOrdersLog);
+console.log(historyService.getEmails);
+console.log(historyService.getOrdersByEmail);
 
 
 // class Car {
@@ -862,7 +862,7 @@
 //   }
 // }
 
-// // Change code above this line
+// Change code above this line
 // const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
 // console.log(storage.getItem()); // ["Nanitoids", "Prolonger", "Antigravitator"]
 // storage.addItem("Droid");
