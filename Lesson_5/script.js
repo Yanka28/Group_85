@@ -21,6 +21,25 @@
 
 
 
+// // const user = {
+// //     name: 'Test',
+// //     age: 28,
+// //     skills: ['html', 'css', 'js'],
+// //     country: {
+// //         Lviv: 'Адреса з Львову',
+// //         Odessa: 'Адреса з Одеси',
+// //         testKEY: {
+// //             testValue: 'Hello world'
+// //         }
+// //     }
+// // }
+
+
+
+
+
+
+
 // const user = {
 //     name: 'Test',
 //     age: 28,
@@ -34,38 +53,19 @@
 //     }
 // }
 
-
-
-
-
-
-
-const user = {
-    name: 'Test',
-    age: 28,
-    skills: ['html', 'css', 'js'],
-    country: {
-        Lviv: 'Адреса з Львову',
-        Odessa: 'Адреса з Одеси',
-        testKEY: {
-            testValue: 'Hello world'
-        }
-    }
-}
-
-const admin = Object.create(user)
-admin.name = "Admin admin";
-admin.age = 33;
-admin.testKEY = {
-    testValue: 'Hello world'
-}
-console.log(admin.name);
-console.log(admin);
-for (const key in admin) {
-    if (admin.hasOwnProperty(key)) {
-        console.log(admin[key]);
-    }
-}
+// const admin = Object.create(user)
+// admin.name = "Admin admin";
+// admin.age = 33;
+// admin.testKEY = {
+//     testValue: 'Hello world'
+// }
+// console.log(admin.name);
+// console.log(admin);
+// for (const key in admin) {
+//     if (admin.hasOwnProperty(key)) {
+//         console.log(admin[key]);
+//     }
+// }
 
 // const keys = Object.keys(admin);
 // for(const key of keys){
@@ -555,3 +555,125 @@ for (const key in admin) {
 // }
 
 // hh(5);
+
+
+//
+
+
+// /Вивести 4 червоні квадрати, при кліку на будь-який, він ставати зеленим, при цьому якщо
+//є вже зелений квадрат, то він ставати назад червоним і так можна кликати на будь-який
+//квадрат, він ставати зеленим, а старий зелений квадрат назад червоним і тд.
+//(Зробити завдання так, щоб можна було додати ще хоч 100 квадратів, при цьому скрипт не
+//треба міняти).
+
+{
+  /* 
+  
+  .square {
+  width: 150px;
+  height: 150px;
+  background: red;
+  margin: 10px;
+}
+
+.square.green {
+  background: green;
+}
+<div class="wrapper">
+  <div class="square"></div> 
+<div class="square"></div> 
+<div class="square"></div> 
+<div class="square"></div>  
+
+</div>*/
+// }
+
+
+// / Напишіть інтерфейс створення списку.
+// //Для кожного пункту:
+
+// // Запитуйте вміст пункту користувача за допомогою prompt.
+// Створюйте елемент <li> і додайте його до <ul>.
+// Процес переривається, коли користувач натискає вводить порожній рядок.
+// Усі елементи мають створюватися динамічно.
+
+{
+  /* <ul class="list"></ul> */
+    }
+
+//     const listEl = document.querySelector('.list');
+
+// window.addEventListener('load', onLoad);
+
+// function onLoad() {
+//     let result = '';
+//     let listArr = [];
+//     do {
+//         result = prompt("Введіть техт");
+//         if (result) {
+//             listArr.push(`<li>${result}</li>`)
+//         }
+//     }
+//     while (result)
+//     console.log(listArr)
+//     listEl.insertAdjacentHTML('beforeend', listArr.join(''))
+// }
+
+
+//Вивести 4 червоні квадрати, при кліку на будь-який, він ставати зеленим, при цьому якщо
+//є вже зелений квадрат, то він ставати назад червоним і так можна кликати на будь-який
+//квадрат, він ставати зеленим, а старий зелений квадрат назад червоним і тд.
+//(Зробити завдання так, щоб можна було додати ще хоч 100 квадратів, при цьому скрипт не
+//треба міняти).
+
+{
+  /* 
+  
+  .square {
+  width: 150px;
+  height: 150px;
+  background: red;
+  margin: 10px;
+}
+
+.square.green {
+  background: green;
+}
+<div class="wrapper">
+  <div class="square"></div> 
+<div class="square"></div> 
+<div class="square"></div> 
+<div class="square"></div>  
+
+</div>*/
+// }const squareEl = document.querySelectorAll('.square')
+// console.log(squareEl)
+// squareEl.forEach(box => {
+//     box.addEventListener('click', changeColor)
+    
+// })
+// function changeColor(event) {
+//     squareEl.forEach(box => {
+//         box.classList.remove('green')
+//     })
+//     event.target.classList.add('green')
+    
+//  }
+
+// Натиснувши кнопку "Подвоювати", збільшити значення
+// у кожному елементі списку у 2 рази
+
+
+//     <div>
+//         <ul class="list">
+//             <li class="listItem">1</li>
+//             <li class="listItem">4</li>
+//             <li class="listItem">8</li>
+//             <li class="listItem">16</li>
+//             <li class="listItem">20</li>
+//             <li class="listItem">30</li>
+//         </ul>
+//         <button id="double">Удвоить</button>
+//     </div>
+
+*/
