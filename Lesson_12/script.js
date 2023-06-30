@@ -11,15 +11,15 @@ const selectors = {
 }
 console.log(selectors.input.value);
 
-selectors.box.addEventListener('click', handlerClick)
-let step = 0
+// selectors.box.addEventListener('click', handlerClick)
+// let step = 0
 
-function handlerClick(evt) {
-    step += 50;
-    // console.log(evt.currentTarget.style.marginLeft);
-    evt.currentTarget.style.marginLeft = `${step}px`;
-    evt.currentTarget.style.marginTop = `${step}px`
-}
+// function handlerClick(evt) {
+//     step += 50;
+//     // console.log(evt.currentTarget.style.marginLeft);
+//     evt.currentTarget.style.marginLeft = `${step}px`;
+//     evt.currentTarget.style.marginTop = `${step}px`
+// }
 
 
 
